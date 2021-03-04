@@ -1,0 +1,254 @@
+/*!
+ * Bootstrap v5.0.0-beta2 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+// scss-docs-start import-stack
+// Configuration
+@import 'functions';
+@import 'variables';
+@import 'mixins';
+@import 'utilities';
+
+// Layout & components
+@import 'root';
+@import 'reboot';
+@import 'type';
+@import 'images';
+@import 'containers';
+@import 'grid';
+@import 'tables';
+@import 'forms';
+@import 'buttons';
+@import 'transitions';
+@import 'dropdown';
+@import 'button-group';
+@import 'nav';
+@import 'navbar';
+@import 'card';
+@import 'accordion';
+@import 'breadcrumb';
+@import 'pagination';
+@import 'badge';
+@import 'alert';
+@import 'progress';
+@import 'list-group';
+@import 'close';
+@import 'toasts';
+@import 'modal';
+@import 'tooltip';
+@import 'popover';
+@import 'carousel';
+@import 'spinners';
+
+// Helpers
+@import 'helpers';
+
+// Utilities
+@import 'utilities/api';
+// scss-docs-end import-stack
+
+nav {
+    .navbar-brand {
+        font-weight: 500;
+        font-size: 28px;
+        color: $black;
+        img {
+            margin-right: 10px !important;
+        }
+    }
+
+    .navbar-nav {
+        .nav-item {
+            .active {
+                color: $black;
+                font-weight: 500;
+                text-decoration: underline $pink 3px;
+            }
+            a {
+                color: $gray-600;
+                font-size: 18px;
+                font-weight: 400;
+                margin: 0px 5px;
+                &:hover {
+                    color: $black;
+                    text-decoration: underline $pink 3px;
+                }
+
+                .my-btn {
+                    background-color: $pink;
+                    border-radius: 30px 30px 15px 15px;
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: $black;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+
+.hero {
+    .hero-title {
+        padding-top: 120px;
+        .title {
+            font-size: 46px;
+            font-weight: 700;
+            line-height: 70px;
+            margin-bottom: 10px;
+            span {
+                text-decoration: underline $pink 5px;
+            }
+        }
+        .summary-title {
+            color: $gray-600;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 34px;
+            margin-bottom: 40px;
+        }
+
+        .decide {
+            background-color: $yellow;
+            border-radius: 30px 30px 15px 15px;
+            font-weight: 500;
+            font-size: 18px;
+            color: $black;
+            padding: 10px 30px;
+        }
+    }
+
+    .right {
+        margin-right: 100px;
+        .img-frame {
+            img {
+                position: absolute;
+                width: 580px;
+                height: 324px;
+                top: 240px;
+                margin: 0px 10px;
+            }
+        }
+        .img-frame-2 {
+            img {
+                position: absolute;
+                width: 580px;
+                height: 324px;
+                top: 150px;
+                margin: 0px 40px 0px -25px;
+            }
+        }
+        .hero-image {
+            img {
+                position: absolute;
+                width: 619px;
+                height: 413px;
+                top: 160px;
+                margin: 0px 30px 0px -5px;
+                object-fit: cover;
+                mask-image: url(../image/frame-kosong.svg);
+                mask-repeat: no-repeat;
+            }
+        }
+    }
+}
+
+.spesial {
+    margin-top: 150px;
+    // just to view
+    margin-bottom: 300px;
+    .spesial-title {
+        p {
+            color: $gray-600;
+            font-weight: 400;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            color: $black;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        .spesial-nav {
+            margin-bottom: 62px;
+            ul {
+                li {
+                    a {
+                        color: $black;
+                        font-weight: 400;
+                        font-size: 20px;
+                        &.active {
+                            color: $yellow;
+                            text-decoration: underline 3px $yellow;
+                            font-weight: 500;
+                        }
+
+                        &:hover {
+                            text-decoration: underline 3px $yellow;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .spesial-menu {
+        .frame-1 {
+            img {
+                width: 287px;
+                height: 300px;
+                position: absolute;
+            }
+        }
+
+        .frame-2 {
+            img {
+                position: absolute;
+                width: 280px;
+                height: 294px;
+            }
+        }
+
+        .image {
+            img {
+                width: 280px;
+                height: 294px;
+                mask-image: url(../image/spesial-frame-3.svg);
+                object-fit: cover;
+                mask-repeat: no-repeat;
+                margin: 10px;
+            }
+        }
+
+        .grid-container {
+            a {
+                text-decoration: none;
+                .spesial-menu-info {
+                    .name {
+                        font-weight: 500;
+                        font-size: 22px;
+                        color: $black;
+                    }
+
+                    .chef {
+                        font-size: 16px;
+                        color: $gray-600;
+                        margin: 8px 0px 12px 0px;
+                    }
+                }
+            }
+        }
+    }
+
+    .grid-container {
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 80px 80px 80px;
+        column-gap: 15px;
+        row-gap: 15px;
+    }
+}
